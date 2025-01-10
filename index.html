@@ -1,28 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Huddle landing page with single introductory section</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
+
 <body>
+  <main>
+    <section>
+      <picture class="background">
+        <!-- Mobile image -->
+        <source media="(max-width: 768px)" srcset="./images/bg-mobile.svg">
+        <!-- Desktop image -->
+        <source media="(min-width: 769px)" srcset="./images/bg-desktop.svg">
+        <!-- Fallback image -->
+        <img src="./images/bg-desktop.svg" alt="Background">
+      </picture>
+      <div class="content">
+        <div class="icon">
+          <img src="./images/logo.svg" alt="speech bubble icon">
+        </div>
+        <div class="flex-container">
+          <div class="flex-item-1">
+            <img src="./images/illustration-mockups.svg" alt="media-image" srcset="">
+          </div>
+          <div>
+            <h1 class="title">Build The Community Your Fans Will Love</h1>
+            <p>Huddle re-imagines the way we build communities. You have a voice, but so does your audience. Create
+              connections with your users as you engage in genuine discussion.</p>
+            <button>Register</button>
+          </div>
+        </div>
 
-  Build The Community Your Fans Will Love
+        <div>
+          <ul>
+            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+          </ul>
+        </div>
 
-  Huddle re-imagines the way we build communities. You have a voice, but so does your audience. 
-  Create connections with your users as you engage in genuine discussion. 
+      </div>
+      <div>
 
-  Register
+      </div>
+    </section>
+  </main>
 
 </body>
+
 </html>
