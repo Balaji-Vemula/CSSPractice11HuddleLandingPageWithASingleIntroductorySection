@@ -115,7 +115,7 @@ body {
     position: fixed;
     bottom: 5%;
     right: 5%;
-    z-index: 1000; 
+    z-index: 1000;
 }
 
 ul {
@@ -141,6 +141,7 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0;
 }
 
 li:hover a {
@@ -156,10 +157,11 @@ li:hover {
     background-color: var(--Soft-Magenta);
 }
 
-@media screen and (max-width: 563px) {
+@media screen and (max-width: 768px) {
     .content {
         padding: 2.5rem;
     }
+
     .flex-container {
         flex-direction: column;
         margin-top: 10px;
@@ -168,12 +170,24 @@ li:hover {
 
     .flex-item-2 button {
         padding: .75rem 5rem;
-        
+
     }
 
     .social-media {
-        right: 50%;
-        transform: translateX(50%);
-        bottom: calc(5px + env(safe-area-inset-bottom));
+        position: relative;
+        padding-bottom: 2rem;
+        left: 50%;
+        /* Move 50% from the left edge of the parent */
+        transform: translateX(-50%);
+        /* Shift back by 50% of its own width */
+        width: 175px;
+        /* bottom: calc(5px + env(safe-area-inset-bottom)); */
     }
 }
+
+/* @media (max-height: 600px) {
+    .social-media  {
+      position: relative;
+      padding-bottom: 2rem;
+    }
+  } */
