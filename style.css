@@ -156,6 +156,9 @@ li:hover {
 }
 
 @media screen and (max-width: 563px) {
+    .content {
+        padding: 2.5rem;
+    }
     .flex-container {
         flex-direction: column;
         margin-top: 10px;
