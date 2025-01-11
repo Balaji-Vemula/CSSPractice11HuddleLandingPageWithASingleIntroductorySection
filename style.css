@@ -43,6 +43,7 @@ body {
     font-size: var(--fs-400);
     color: var(--white);
     background-color: var(--Violet);
+    width: 100%;
 }
 
 /* Picture tag to fill the background */
