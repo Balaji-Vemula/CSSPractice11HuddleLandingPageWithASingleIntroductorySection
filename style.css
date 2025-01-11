@@ -67,6 +67,7 @@ body {
 .content {
     position: relative;
     z-index: 1;
+    max-height: 90vh;
     /* Ensures content appears above the background */
     color: white;
     padding: 3rem 4rem 0 4rem;
@@ -121,6 +122,8 @@ ul {
     list-style-type: none;
     column-gap: 1rem;
     justify-content: flex-end;
+    padding: 0;
+    margin: 0;
 }
 
 li a {
