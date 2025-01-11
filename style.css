@@ -67,7 +67,6 @@ body {
 .content {
     position: relative;
     z-index: 1;
-    max-height: 90vh;
     /* Ensures content appears above the background */
     color: white;
     padding: 3rem 4rem 0 4rem;
@@ -115,6 +114,7 @@ body {
     position: fixed;
     bottom: 5%;
     right: 5%;
+    z-index: 1000; 
 }
 
 ul {
@@ -170,5 +170,6 @@ li:hover {
     .social-media {
         right: 50%;
         transform: translateX(50%);
+        bottom: calc(5px + env(safe-area-inset-bottom));
     }
 }
